@@ -11,7 +11,7 @@ import UIKit
 
 protocol HotelDetailViewProtocol : class {
     
-    var presenter: HotelDetailPresenterProtocol { get set }
+    var presenter: HotelDetailPresenterProtocol? { get set }
     
     func showHotelDetail(forHotel hotel: Hotel)
 }
