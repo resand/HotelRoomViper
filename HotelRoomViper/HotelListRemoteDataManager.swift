@@ -43,7 +43,6 @@ class HotelListRemoteDataManager: HotelListRemoteDataManagerInputProtocol {
                 
                 print(hotels)
               self.remoteRequestHandler?.onHotelsRetrieved(hotels)
-                print("llega")
                         case .failure(_):
                             print(response.result)
                             self.remoteRequestHandler?.onError()

@@ -10,6 +10,8 @@ import UIKit
 
 class HotelDetailView: UIViewController {
 
+    //Variables
+    
     @IBOutlet var hotelDetailImage: UIImageView!
     @IBOutlet var hotelTypeLabel: UILabel!
     @IBOutlet var hotelSizeLabel: UILabel!
@@ -20,12 +22,12 @@ class HotelDetailView: UIViewController {
     @IBOutlet var hotelBathroomsLabel: UILabel!
     @IBOutlet var hotelDescriptionLabel: UILabel!
     
-    
+    var presenter: HotelDetailPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presenter?.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,4 +46,32 @@ class HotelDetailView: UIViewController {
     }
     */
 
+}
+
+
+extension HotelDetailView : HotelDetailViewProtocol {
+    
+    /*
+     Function to show hotel information on the view.
+     */
+    func showHotelDetail(forHotel hotel: Hotel) {
+        
+        hotelDetailNameLabel.text = hotel.name
+        hotelTypeLabel.text = hotel.propertyType
+        hotelSizeLabel.text = "ES UN HOTEL"
+        hotelDescriptionLabel.text = "ES SEVERO HOTEL"
+        hotelGuestsLabel.text = "\(hotel.guests)" ?? "0"
+        hotelBedsLabel.text = "\(hotel.beds)" ?? "0"
+        hotelBedroomsLabel.text = "\(hotel.bedrooms)" ?? "0"
+        hotelBathroomsLabel.text = "\(hotel.bathrooms)" ?? "0"
+               
+        
+        let url = URL(string: (hotel.imageUrl)!)
+        let placeHolder = UIImage(named: "placeholder")
+        hotelDetailImage.af_setImage(withURL: url!, placeholderImage: placeHolder)
+        
+
+    }
+
+    
 }

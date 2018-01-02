@@ -46,6 +46,12 @@ class HotelListWireframe: HotelListWireframeProtocol {
     //PRESENTER -> WIREFRAME
     func presenterHotelDetailScreen(from view: HotelListViewProtocol, forHotel hotel: Hotel){
         
+        let hotelDetailViewController = HotelDetailWireframe.createHotelDetailModule(forHotel: hotel)
+        
+        if let sourceView = view as? UIViewController {
+            sourceView.navigationController?.pushViewController(hotelDetailViewController, animated: true)
+        }
+        
     }
     
 }

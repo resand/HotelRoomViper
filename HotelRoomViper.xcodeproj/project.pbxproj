@@ -24,6 +24,8 @@
 		9EF46BF41FEEB39300B438B0 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF46BF31FEEB39300B438B0 /* Protocols.swift */; };
 		9EF956751FFBD5580053E4ED /* HotelDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF956741FFBD5580053E4ED /* HotelDetailProtocols.swift */; };
 		9EF956771FFBE8D00053E4ED /* HotelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF956761FFBE8D00053E4ED /* HotelDetailView.swift */; };
+		9EF956791FFBFCA90053E4ED /* HotelDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF956781FFBFCA90053E4ED /* HotelDetailPresenter.swift */; };
+		9EF9567B1FFBFE890053E4ED /* HotelDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF9567A1FFBFE890053E4ED /* HotelDetailWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		9EF46BF31FEEB39300B438B0 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		9EF956741FFBD5580053E4ED /* HotelDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelDetailProtocols.swift; sourceTree = "<group>"; };
 		9EF956761FFBE8D00053E4ED /* HotelDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelDetailView.swift; sourceTree = "<group>"; };
+		9EF956781FFBFCA90053E4ED /* HotelDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelDetailPresenter.swift; sourceTree = "<group>"; };
+		9EF9567A1FFBFE890053E4ED /* HotelDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelDetailWireframe.swift; sourceTree = "<group>"; };
 		DF6BD75AE882E639D68C08DC /* Pods-HotelRoomViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelRoomViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotelRoomViper/Pods-HotelRoomViper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +209,7 @@
 		9EF956701FFBD4DA0053E4ED /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9EF956781FFBFCA90053E4ED /* HotelDetailPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 		9EF956721FFBD4F10053E4ED /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				9EF9567A1FFBFE890053E4ED /* HotelDetailWireframe.swift */,
 			);
 			name = Wireframe;
 			sourceTree = "<group>";
@@ -367,6 +373,8 @@
 			files = (
 				9EE96DB51FF00A26001651FD /* HotelCell.swift in Sources */,
 				9EF956771FFBE8D00053E4ED /* HotelDetailView.swift in Sources */,
+				9EF956791FFBFCA90053E4ED /* HotelDetailPresenter.swift in Sources */,
+				9EF9567B1FFBFE890053E4ED /* HotelDetailWireframe.swift in Sources */,
 				9E349A5A1FEC9A4D00C19B62 /* Hotel.swift in Sources */,
 				9EE96DB71FF00F98001651FD /* HotelListPresenter.swift in Sources */,
 				9E349A431FEC888000C19B62 /* ViewController.swift in Sources */,
